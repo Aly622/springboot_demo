@@ -1,1 +1,19 @@
-
+server:
+  port: 10000
+spring:
+  application:
+    name: oliver
+  redis:
+    database: 6
+    host: gz-crs-eedfedot.sql.tencentcdb.com
+    port: 24925
+    lettuce:
+      pool:
+        max-active: 60  # 连接池最大连接数（使用负值表示没有限制）
+        max-idle: 30  # 连接池中的最小空闲连接
+        min-idle: 10  # 连接池中的最大空闲连接
+        max-wait: -1  #最大建立连接等待时间。如果超过此时间将接到异常。设为-1表示无限制。
+        time-between-eviction-runs: 20000 #空闲链接检测线程检测周期毫秒（负值表示不检测）(类型为Duration，添加秒)
+      shutdown-timeout: 100 #关闭超时时间
+    password: HDwuNL6tvwhPF(HN
+    timeout: 50000

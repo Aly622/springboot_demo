@@ -1,4 +1,4 @@
-package com.example.demo.test;
+package com.example.mq;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
